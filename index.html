@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <!-- PYSCRIPT -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Student Grade Calculator</title>
+
+    <style>
+    body{
+    text-align:center;
+    justify-content:center;
+    background-color: lightskyblue
+    }
+
+    .output{ 
+    white-space: pre-wrap; 
+    background-color: lavenderblush;
+    margin-top: 20px; 
+    }
+</style>
+</head>
+<body>
+    <py-script src="main.py"></py-script>
+    <h1>School Club Information</h1>
+    <hr>
+
+    <div class="top">
+        <h4>Select a club:</h4>
+        <button type="button" class="btn-info" py-click="commarts_result" id="commarts">Communication Arts Club</button>
+        <button type="button" class="btn-info" py-click="math_result" id="math">Math Club</button>
+        <button type="button" class="btn-info" py-click="sci_result"id="science">Science Club</button>
+        <button type="button" class="btn-info" py-click="ss_result" id="social sciences">Social Sciences Club</button>
+        <button type="button" class="btn-info" py-click="vball_result" id="volleyball">Volleyball Club</button>
+    </div>
+
+
+    <div class="output" id="output"></div>
+</body>
+</html>
